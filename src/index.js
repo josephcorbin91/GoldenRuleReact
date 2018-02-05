@@ -12,9 +12,7 @@ import { Route, Router, IndexRoute, browserHistory } from 'react-router';
 const routes =
 <Router history={browserHistory}>
   <Route path="/" component={App}>
-    <IndexRoute component={Landing} />
-    <Route path="/detail/:slug" component={ProductDetail} />
-  </Route>
+   </Route>
   <Route path="*" component={App}>
     <IndexRoute component={MissingRoute} />
   </Route>
