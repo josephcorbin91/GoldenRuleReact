@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Form, FormControl, Navbar, Glyphicon,
   Nav, NavItem, Well, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router';
+import WebsiteLogo from './WebSiteLogoImage.png';
 import './Navigation.css';
 import reFirebase from './reFirebase';
 
@@ -60,19 +61,31 @@ export default class Navigation extends Component {
       <div className="Navigation__container">
         <Navbar inverse fixedTop>
           <Navbar.Header>
-            <Navbar.Brand>
-              <Link to="/">React Eshop</Link>
+           <Navbar.Brand>
+              <a href="#">&#9776; React-Bootstrap
+          <img src={WebsiteLogo} style={{width:100, marginTop: -7}} />
+          </a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav pullRight>
-              <NavItem href="//github.com/manavsehgal/react-eshop">
-                Code
+            <Nav pullLeft>
+              <NavItem >
+                App
               </NavItem>
-              <NavItem href="//leanpub.com/reacteshop">
-                Book
+              <NavItem >
+                Org
               </NavItem>
+               <NavItem >
+                Publicity
+              </NavItem>
+              <NavItem >
+                Sponsor
+              </NavItem>
+              <NavItem >
+                Q&A
+              </NavItem>
+              
               {this.state.logout
                 ? <NavItem onClick={this.logout} href="">
                     Logout <Glyphicon glyph="log-out" /></NavItem>
