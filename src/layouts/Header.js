@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Grid, Form, FormControl, Navbar, Glyphicon,
   Nav, NavItem, Well, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router';
-import WebsiteLogo from './WebSiteLogoImage.png';
-import './Navigation.css';
-import reFirebase from './reFirebase';
+import WebsiteLogo from '../images/WebSiteLogoImage.png';
+import '../css/Navigation.css';
+import reFirebase from '../reFirebase';
 
 export default class Navigation extends Component {
   constructor(props) {
